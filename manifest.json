@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "io.github.soham3301.net-rain",
+	"name": "Net Rain",
+	"version": "1.0.0",
+	"author": "Soham Datta",
+	"license": "MIT",
+	"description": "A tiny matrix-style network monitor for the Omarchy bar. Square dots fall for download and rise for upload, faster and hotter as speed climbs. No text, no clicks.",
+	"kinds": ["bar-widget"],
+	"entryPoints": { "barWidget": "BarWidget.qml" },
+	"barWidget": {
+		"displayName": "Net Rain",
+		"category": "System",
+		"allowMultiple": false,
+		"defaultSection": "right",
+		"defaults": {
+			"width": 90,
+			"dotSize": 4,
+			"dotGap": 2,
+			"maxRows": 5,
+			"interface": "auto"
+		}
+	}
+}
