@@ -27,7 +27,7 @@ Item {
   readonly property int gap: Math.max(0, Math.round(Number(root.setting("dotGap", 2))))
   readonly property int pitch: root.dot + root.gap
   readonly property int inset: Math.floor(root.gap / 2)
-  readonly property int longSide: Math.max(root.pitch * 4, Math.round(Number(root.setting("width", 90))))
+  readonly property int longSide: Math.max(root.pitch * 4, Math.round(Number(root.setting("width", 180))))
   readonly property int crossCells: Math.max(2, Math.min(Math.round(Number(root.setting("maxRows", 5))), Math.floor((root.barSize - 2) / root.pitch)))
   readonly property int cols: Math.floor((root.vertical ? root.crossCells * root.pitch : root.longSide) / root.pitch)
   readonly property int rows: Math.floor((root.vertical ? root.longSide : root.crossCells * root.pitch) / root.pitch)

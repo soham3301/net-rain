@@ -2,7 +2,7 @@
 
 A tiny, purely visual network monitor for the Omarchy (Quattro) top bar.
 
-- Download dots fall from the top, upload dots rise from the bottom, mixed in one 90 px panel.
+- Download dots fall from the top, upload dots rise from the bottom, mixed in one 180 px panel.
 - More traffic means more dots, faster dots and hotter colour: green (kb/s), yellow (1-9 Mb/s), red (10-50 Mb/s), purple (50+ Mb/s), blended smoothly.
 - No text and no hover. The background is black with a faint green CRT tint, and a single click makes it transparent (click again to bring the black back).
 - When the network goes offline, the dots fade to grey and freeze in place. When it comes back, they fade back to colour and keep moving.
@@ -20,7 +20,7 @@ Add keys to the widget's entry in `~/.config/omarchy/shell.json`:
 
 | Key           | Default | Meaning                                                    |
 | ------------- | ------- | ---------------------------------------------------------- |
-| `width`       | `90`    | Length of the display in px                                |
+| `width`       | `180`   | Length of the display in px                                |
 | `dotSize`     | `4`     | Square size in px                                          |
 | `dotGap`      | `2`     | Gap between squares in px                                  |
 | `maxRows`     | `5`     | Most dot rows allowed (also limited by bar height)         |
